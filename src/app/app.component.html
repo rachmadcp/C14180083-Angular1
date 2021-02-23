@@ -1,4 +1,20 @@
-<hello name="{{ name }}"></hello>
+<!-- <hello name="{{ name }}"></hello>
 <p>
   Start editing to see some magic happen :)
-</p>
+</p> -->
+
+
+
+ {{player1}}'s turn
+<br>
+koor 1: <input [(ngModel)]="inputplayer1" type="text"> 
+<br>
+koor 1: <input [(ngModel)]="inputplayer2" type="text"> 
+<br>
+<button (click)="playtitato()">End Turn</button>
+
+<div *ngFor="let baris of titato_arr">
+	<span *ngFor="let kolom of baris">
+    {{kolom}}
+  </span>
+</div>
